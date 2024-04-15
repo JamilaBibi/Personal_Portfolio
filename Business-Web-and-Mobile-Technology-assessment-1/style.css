@@ -1,0 +1,620 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transition */
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: rgb(110, 155, 110);
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER menu */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out; 
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; 
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+
+
+
+/* Light mode styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+
+/* Light mode styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #10271a;
+    color: #ffffff;
+}
+
+
+/* Button styles */
+button {
+    background-color: #79cd8b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #2f6049;
+}
+#dark-mode-toggle {
+    position: fixed; /* Position the button relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    display: block; /* Display the button as a block element */
+    width: 100px; /* Set the width of the button */
+    height: 50px; /* Set the height of the button */
+    padding: 10px; /* Add padding for better spacing */
+    text-align: center; /* Center the text horizontally */
+    background-color: #333; /* Background color of the button */
+    color: #fff; /* Text color of the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    z-index: 999; /* Set a high z-index to ensure the button appears above other elements */
+}
+
+
+
+
+/*Sections 1*/
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10 rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/*home section*/
+
+#home {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p{
+    font-weight:600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/*Section2*/
+
+#about-me {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section__pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin-right: 5rem; 
+}
+
+.about-pic {
+    max-width: 80%;
+    max-height: 300px;
+}
+
+.section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.section__text__p1 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/*Icon*/
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+
+/*button*/
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+
+#about-me {
+    margin-bottom: 100px; 
+}
+
+/*Project section*/
+.project-details-containers {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.project-container {
+    width: 250px; 
+    margin: 10px;
+    padding-right: 70px;
+}
+
+.Project-pic-1 {
+    width: 150%; 
+    height: 220px; 
+    border-radius: 10px;
+ 
+}
+
+.Project-pic-2 {
+    width: 150%; 
+    height: 220px; 
+    border-radius: 10px;
+    
+}
+
+.Project-pic-3 {
+    width: 150%; 
+    height: 220px; 
+    border-radius: 10px;
+   
+}
+
+.project-title {
+    text-align: center;
+    padding: 10px ;
+    color: rgb(68, 109, 84); 
+  
+}
+
+
+/*modal for project 1*/
+/* Style for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 450px;
+}
+
+
+
+.modal-description {
+    text-align: center;
+    color: #13c841;
+    padding: 5px 0;
+    max-height: 500px; 
+    overflow-y: auto;
+}
+
+
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#my-projects {
+    margin-bottom: 100px; 
+}
+
+
+/*contact section*/
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } 
+
+
+/* Style for required fields */
+label.required::after {
+    content: '*';
+    color: red;
+    margin-left: 5px; /* Adjust as needed */
+}
+
+/* Light mode styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#contact {
+    margin-bottom: 200px; 
+}
+
+/*Footer section*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+footer{
+    background-color: #2f6049;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color:#000000;
+    opacity: 0.9;
+}
+
+/*Hover effect on social media icons*/
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footterNav ul li a:hover{
+    opacity: 1;
+
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+

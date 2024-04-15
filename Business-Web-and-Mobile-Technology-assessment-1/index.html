@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bibi Jamila</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Bibi Jamila</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> 
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#my-projects" onclick="toggleMenu()">My Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+    <section id="home">
+        <div class="section__pic-container">
+            <img src="./asset/profile-pic-1.jpg" alt="Bibi Jamila Profile Picture">
+        </div>
+        <div class="section__text">
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Bibi Jamila Subdurally</h1>
+                <p class="section__text__p2">Curtin University Student</p>
+                
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+    <section id="about-me">
+        <div class="section-container">
+            <img
+            src="./asset/about-pic.jpg"
+            alt="About Picture"
+            class="about-pic"
+            />
+        </div>
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="btn-container">
+            <button 
+                class="btn btn-color-2" onclick="window.open('./asset/Resume.pdf')">View Resume
+            </button>
+            <button 
+                class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me
+            </button>
+
+        </div>
+        <div id="social-container">
+            <img 
+               src="./asset/linkedin.png" 
+               alt="My LinkedIn Profile"
+               class="icon"
+               onclick="location.href='https://www.linkedin.com/in/bibi-jamila-subdurally-1370512a0/'"
+            />
+            <img 
+                 src="./asset/github.png" 
+                 alt="My Github Profile"
+                 class="icon"
+                  onclick="location.href='https://github.com/JamilaBibi'"
+             />
+
+        </div>
+        
+    </div>
+    </section>
+       
+    <section id="my-projects">
+        <p class="section__text__p1">Explore My Future</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-details-containers">
+            <div class="project-container color-container">
+                <div class="project-container">
+                    <img src="./asset/Project-1.png" alt="Project-1" class="Project-pic-1" />
+                </div>
+                <h2 class="project-title">E-commerce Website Project</h2>
+                <div class="modal" id="modal-1">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-img-1">
+                    <div class="modal-description">
+                        <p>This project aims to develop a comprehensive, full-stack functional e-commerce website that offers users the ability to seamlessly browse, select, purchase, and securely pay for products directly on the platform. With an emphasis on user experience and efficiency, this endeavor seeks to create a robust online shopping environment where clients can effortlessly navigate through various product categories, make informed purchasing decisions, and complete transactions with ease. By integrating a range of features, including intuitive product search and filtering options, a streamlined checkout process, and secure payment gateways, the platform endeavors to provide a seamless end-to-end shopping experience for customers. Through meticulous attention to detail and a focus on enhancing both functionality and accessibility, this project aims to deliver a user-centric e-commerce solution tailored to meet the diverse needs of modern consumers.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="project-container color-container">
+                <div class="project-container">
+                    <img src="./asset/Project-2.png" alt="Project-2" class="Project-pic-2" />
+                </div>
+                <h2 class="project-title">Public Transport Tracker Project</h2>
+                <div class="modal" id="modal-2">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-img-2">
+                    <div class="modal-description">
+                        <p>This project endeavors to create a dynamic and user-friendly public transport tracker application that empowers users to seamlessly access real-time information about bus locations and arrival times. By leveraging innovative technology and robust data integration, this application will enable commuters to stay informed about the precise whereabouts of buses along their routes, thereby optimizing their travel experience. With live updates and accurate tracking capabilities, users can efficiently plan their journeys, anticipate arrivals, and minimize waiting times at bus stops. Through intuitive interface design and reliable data synchronization, this project aims to deliver a comprehensive solution that enhances the accessibility and convenience of public transportation for individuals across various demographics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container color-container">
+                <div class="project-container">
+                    <img src="./asset/Project-3.png" alt="Project-3" class="Project-pic-3" />
+                </div>
+                <h2 class="project-title">Online Queuing System Project</h2>
+                <div class="modal" id="modal-3">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-img-3">
+                    <div class="modal-description">
+                        <p>This project aims to streamline the queuing experience by introducing an online queuing system that allows users to join queues remotely. Through real-time updates and notifications, users can efficiently manage their wait times and proceed to the location when their turn approaches, enhancing convenience and minimizing unnecessary wait times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2> 
+        <div class="container">
+            <form action="action_page.php" method="post">
+    
+                <label for="fname" class="required">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    
+                <label for="lname" class="required">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    
+                <label for="country" class="required">Country</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Rodrigues">Rodrigues</option>
+                </select>
+    
+                <label for="subject" class="required">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://www.instagram.com/jamila._bibi?igsh=Yndlc3NzOWl6ejd5&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bibi-jamila-subdurally-1370512a0/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JamilaBibi"><i class="fa-brands fa-github"></i></a>
+            </div>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#my-projects">My Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+    
+                    </ul>
+               
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Jamila</span></p>
+            </div>
+        </footer>
+        
+
+ 
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
